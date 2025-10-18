@@ -9,21 +9,21 @@ class Chaser {
     myColor=(int)(Math.random()*200);
   }
   void walk(){
-  if(mouseX+200>myX){
-   myX = myX + (int)(Math.random()*3);
+  if(mouseX>myX){
+   myX = myX + (int)(Math.random()*2);
    }
-   if(mouseX-200<myX){
-   myX = myX - (int)(Math.random()*3);
+   if(mouseX<myX){
+   myX = myX - (int)(Math.random()*2);
    }
-   if(mouseY+200>myY){
-   myY = myY + (int)(Math.random()*3);
+   if(mouseY>myY){
+   myY = myY + (int)(Math.random()*2);
    }
-   if(mouseY-200<myY){
-   myY = myY - (int)(Math.random()*3);
+   if(mouseY<myY){
+   myY = myY - (int)(Math.random()*2);
    }
   }
   void show(){
-  fill(myColor,0,myColor);
+  fill(myColor,myColor,myColor);
     ellipse(myX, myY, 80,20);
   }
 }//end of Walker class
